@@ -1,0 +1,20 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables */
+:root {
+    /* Dark Theme */
+    --primary-color: #F0F0F0;
+    --primary-bg-color: #111217;
+    --secondary-bg-color: #28292E;
+    --border-color: #28292E;
+    --title-color: #F0F0F0;
+    --text-color: #9A9A9C;
+    --link-color: #9A9A9C;
+    --icon-color: #C7C8C9;
+
+    /* Fonts */
+    --font-family-text: 'Inter', sans-serif;
+    --font-family-title: 'Roboto', sans-serif;
+}
