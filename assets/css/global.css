@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
+/* Tema Dark */
+
 :root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;
 
@@ -15,6 +17,8 @@
     --icon-color: #C7C8C9;
 }
 
+/* Tema Light */
+
 :root[data-theme='light'] {
     --primary-color: #0B0B0F;
     --primary-bg-color: #E9E9E9;
@@ -26,5 +30,13 @@
     --text-color: #28292E;
     --link-color: #28292E;
     --icon-color: #56575A;
+}
+
+/* Fontes */
+
+:root {
+    --font-family-base: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
+    --font-family-title: 'Roboto', sans-serif;
+    --font-family-alt: 'League Spartan', Arial, sans-serif;
 }
 
