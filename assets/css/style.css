@@ -28,6 +28,11 @@ i {
     padding: 0.5rem 1rem;
 }
 
+.header__toggle {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header__brand .brand__logo {
     width: 3.25rem;
     height: 3.25rem;
@@ -73,8 +78,11 @@ i {
 }
 
 .menu__link.active .menu__icon, 
-.menu__link.active .menu__text {
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon, 
+.menu__link:hover .menu__text {
     color: var(--primary-color);
+    transition: color 0.3s ease;
     font-weight: 600;
 }
 
@@ -88,12 +96,39 @@ i {
     text-transform: uppercase;
 }
 
-/* Responsividade */
+/* Menu Desktop e Responsividade */
+
+.header__nav {
+    display: none;
+}
 
 @media (min-width: 768px) {
-    .menu--mobile {
+    .header {
+        position: fixed;
+        border-bottom: 1px solid var(--primary-border-color);
+        padding: 1rem 4rem;
+        background: var(--primary-bg-color);
+    }
+    .nav--mobile {
         display: none;
+    }
+
+    .header__nav {
+        display: flex;
+    }
+
+    .header__nav,
+    .header__toggle {
+        min-width: 30%;
     }
 }
 
-/* Menu Desktop */
+@media (min-width: 1400px) {
+    .header {
+        padding: 1rem 15rem;
+    }
+}
+
+.menu--principal {
+    gap: 1rem;
+}
