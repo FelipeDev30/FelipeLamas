@@ -3,18 +3,28 @@
 
 /* Body */
 
+html[data-theme='dark'] .brand__logo {
+    filter: invert(1);
+}
+
 body {
     background: var(--primary-bg-color);
     font-family: var(--font-family-base);
 }
 
 a {
-    color: var(--link-color);
+    color: var(--text-color);
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 i {
     color: var(--icon-color);
+    cursor: pointer;
 }
 
 /* Header */
