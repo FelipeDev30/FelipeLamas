@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon and logo/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Tags Meta - SEO -->
     <meta name="author" content="Luiz Felipe Lamas da Silva">
@@ -14,6 +15,7 @@
     <meta name="description" content="Desenvolvedor front-end, Luiz Felipe Lamas da Silva. Experiências, Habilidades e Projetos">
     <title>Felipe Lamas | Portifólio</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
@@ -34,14 +36,16 @@
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a class="menu__link" href="#Contato">
+                    <a class="menu__link" href="#contato">
                         <span class="menu__text">Contato</span>
                     </a>
                 </li>
             </ul>
         </nav>
         <div class="header__brand">
-            <img class="brand__logo" src="assets/images/logo.png" alt="">
+            <a href="#home">
+                <img class="brand__logo" src="assets/images/favicon and logo/logo.png" alt="Logo Felipe Lamas">
+            </a>
         </div>
         <div class="header__toggle">
             <i id="toggleTheme" class="bi bi-sun"></i>
@@ -51,43 +55,346 @@
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link active" href="#home">
-                    <i class="menu__icon bi bi-house-door"></i> 
+                    <i class="menu__icon bi bi-house-door"></i>
                     <span class="menu__text">Home</span>
                 </a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i> 
+                    <i class="menu__icon bi bi-window-stack"></i>
                     <span class="menu__text">Projetos</span>
                 </a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i> 
+                    <i class="menu__icon bi bi-person"></i>
                     <span class="menu__text">Sobre</span>
                 </a>
             </li>
             <li class="menu__item">
-                <a class="menu__link" href="#Contato">
-                    <i class="menu__icon bi bi-envelope"></i> 
+                <a class="menu__link" href="#contato">
+                    <i class="menu__icon bi bi-envelope"></i>
                     <span class="menu__text">Contato</span>
                 </a>
             </li>
         </ul>
     </nav>
-    <main>
 
+    <main id="home">
+        <div class="main__content1">
+            <h1><b>Front-end:</b> Conectando Pessoas e Tecnologia</h1>
+            <p>Felipe Lamas, Rio de Janeiro-RJ, Desenvolvedor Front-end.</p>
+            <ul class="menu menu--social">
+                <li>
+                    <a class="menu__link" href="https://github.com/FelipeDev30" target="_blank">
+                        <i class="menu__icon bi bi-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu__link" href="https://www.linkedin.com/in/luiz-felipe-lamas-da-rosa/" target="_blank">
+                        <i class="menu__icon bi bi-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu__link" href="https://www.instagram.com/lipedev30/" target="_blank">
+                        <i class="menu__icon bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <a href="#projetos">
+                <button class="btn btn--primary">
+                    <span>Ver Projetos</span>
+                    <i class="bi bi-arrow-down-right"></i>
+                </button>
+            </a>
+        </div>
+        <div class="main__content2">
+            <iframe src="https://www.youtube.com/embed/A1BaZr82XJI?si=E_zROP2Y0oIx8TqP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
     </main>
+
+    <!-- Tecnologias -->
+    <section class="technologies">
+        <h2>Conhecimento nas principais tecnologias do mercado</h2>
+        <ul class="technologies__list">
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/icons8-html-5-48.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/icons8-css3-48.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/icons8-javascript-48.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+                <img class="technologies__logo" src="assets/images/technologies/icons8-bootstrap-48.png" alt="Logo Bootstrap">
+            </li>
+        </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projects">
+        <h2>Projetos</h2>
+        <div class="projects__container">
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/josisbox.jpg" alt="Capa Josi's Box">
+                <div class="card__body">
+                    <h3 class="card__title">Projeto 1</h3>
+                    <p class="card__description">Descrição breve do projeto 1.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Funcionalidade 1;</li>
+                        <li class="card__item">Funcionalidade 2;</li>
+                        <li class="card__item">Funcionalidade 3.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/icons8-html-5-48.png" alt="Logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/icons8-css3-48.png" alt="Logo TypeScript">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/icons8-javascript-48.png" alt="Logo Bootstrap">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/icons8-bootstrap-48.png" alt="Logo SASS">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card card--reverse">
+                <img class="card__cover" src="assets/images/projects/archstil.jpg" alt="Capa Archstil">
+                <div class="card__body">
+                    <h3 class="card__title">Projeto 2</h3>
+                    <p class="card__description">Descrição breve do projeto 2.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Funcionalidade 1;</li>
+                        <li class="card__item">Funcionalidade 2;</li>
+                        <li class="card__item">Funcionalidade 3.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects__card">
+                <img class="card__cover" src="assets/images/projects/games-store.jpg" alt="Capa Games Store">
+                <div class="card__body">
+                    <h3 class="card__title">Projeto 3</h3>
+                    <p class="card__description">Descrição breve do projeto 3.</p>
+                    <ul class="card__list">
+                        <li class="card__item">Funcionalidade 1;</li>
+                        <li class="card__item">Funcionalidade 2;</li>
+                        <li class="card__item">Funcionalidade 3.</li>
+                    </ul>
+                    <ul class="technologies__list">
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/Angular.svg" alt="Logo Angular">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/TypeScript.svg" alt="Logo TypeScript">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/Bootstrap.svg" alt="Logo Bootstrap">
+                        </li>
+                        <li class="technologies__item">
+                            <img class="technologies__logo" src="assets/images/technologies/SASS.svg" alt="Logo SASS">
+                        </li>
+                    </ul>
+                    <div class="card__buttons">
+                        <button class="btn btn--primary">
+                            <span>Prévia</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                        <button class="btn">
+                            <span>Repositório</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <a href="LINK_GITHUB">
+                <button class="btn btn--primary">
+                    <span>Ver Todos os Projetos</span>
+                    <i class="bi bi-arrow-up-right"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="about">
+        <div class="about__content1">
+            <img class="about__photo" src="assets/images/avatar.jpg" alt="Foto do avatar">
+            <div class="about__description">
+                <h2>Sobre mim</h2>
+                <p>Descrição sobre a pessoa e suas paixões. Experiências iniciais com tecnologia e percurso de carreira.
+                </p>
+                <div class="about__icons">
+                    <i class="bi bi-translate"></i>
+                    <span>Idiomas: Nível de Proficiência</span>
+                </div>
+                <div class="description__buttons">
+                    <a href="LINK_DO_LINKEDIN" target="_blank">
+                        <button class="btn btn--primary">
+                            <span>Conecte-se Comigo</span>
+                            <i class="bi bi-arrow-up-right"></i>
+                        </button>
+                    </a>
+                    <a href="LINK_DO_CURRÍCULO">
+                        <button class="btn">
+                            <span>Currículo</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="about__content2">
+            <div class="col1">
+                <div class="row1">
+                    <h3>Formação</h3>
+                    <h4>Curso e Instituição</h4>
+                    <span>Período de estudo</span>
+                    <div class="about__icons">
+                        <i class="bi bi-bank"></i>
+                        <span>Nome da Instituição</span>
+                    </div>
+                    <div class="about__icons">
+                        <i class="bi bi-mortarboard"></i>
+                        <span>Nível do Curso</span>
+                    </div>
+                </div>
+                <div class="row2">
+                    <h3>Experiências</h3>
+                    <h4>Título da Posição</h4>
+                    <span>Nome da Empresa. Período de Trabalho</span>
+                    <span>Resumo das atividades e responsabilidades.
+                    </span>
+                    <ul class="about__list">
+                        <li class="about__item">Responsabilidade ou conquista 1;</li>
+                        <li class="about__item">Responsabilidade ou conquista 2;</li>
+                        <li class="about__item">Responsabilidade ou conquista 3.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col2">
+                <h3>Cursos</h3>
+                <div id="accordion">
+                    <div class="accordion__item active">
+                        <button class="accordion__header start">
+                            <span>Título do Curso 1</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                Nome da Instituição. Mês/Ano. Duração.
+                            </p>
+                            <p>
+                                Breve descrição do curso e do conteúdo abordado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header">
+                            <span>Título do Curso 2</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body">
+                            <p>
+                                Nome da Instituição. Mês/Ano. Duração.
+                            </p>
+                            <p>
+                                Breve descrição do curso e do conteúdo abordado.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <button class="accordion__header end">
+                            <span>Título do Curso 3</span>
+                            <i class="bi bi-caret-down-fill"></i>
+                        </button>
+                        <div class="accordion__body end">
+                            <p>
+                                Nome da Instituição. Mês/Ano. Duração.
+                            </p>
+                            <p>
+                                Breve descrição do curso e do conteúdo abordado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <h2>Contate-me</h2>
+        <p>Estou disponível para serviços e novas conexões. Contate-me via
+            e-mail e conecte-se comigo através das minhas redes sociais.
+        </p>
+        <ul class="menu menu--social">
+            <li>
+                <a class="menu__link" href="LINK_DO_GITHUB" target="_blank">
+                    <i class="menu__icon bi bi-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="LINK_DO_LINKEDIN" target="_blank">
+                    <i class="menu__icon bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__link" href="LINK_DO_INSTAGRAM" target="_blank">
+                    <i class="menu__icon bi bi-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+        </ul>
+        <a href="mailto:EMAIL_AQUI">
+            <button class="btn btn--primary">
+                <span class="email">EMAIL_AQUI</span>
+            </button>
+        </a>
+    </section>
+    
+    <!-- Rodapé -->
     <footer>
         <p>
             &copy; 2025  - Todos os direitos reservados. Felipe Lamas | Desenvolvedor Front-end.  <a href="https://github.com/FelipeDev30/FelipeLamas"><i class="bi bi-github"></i></a>
         </p>
     </footer>
-
-
-
-
-
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
